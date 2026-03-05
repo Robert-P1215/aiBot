@@ -38,7 +38,7 @@ with st.sidebar:
 
             st.session_state.chat = st.session_state.client.chats.create(
                 model="gemini-3-flash-preview",
-                config=types.GenerateConentConfig(
+                config=types.GenerateContentConfig(
                     system_instruction="You are a document expert."
                                        "Answer questions ONLY using the uploaded file."
                                        "If the answer isn't there, say you don't know."
